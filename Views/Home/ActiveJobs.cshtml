@@ -1,0 +1,16 @@
+﻿@model IEnumerable<FilegaJobs.Models.Jobs>
+
+@{
+    ViewData["Title"] = "Active Jobs";
+}
+    
+    <h3>List of active Jobs</h3>
+    <select multiple class="form-control" id = "ActiveJ">
+            
+            @foreach (var job in Model)
+            {
+                 <option>@job.Name</option>
+            }
+     
+     </select>
+  

@@ -1,0 +1,15 @@
+﻿@model IEnumerable<FilegaJobs.Models.UserProfiles>
+
+@{
+    ViewData["Title"] = "Active Users";
+}
+    
+    <h3>List of Active Users</h3>
+    <select multiple class="form-control" id = "ActiveJ">
+            
+            @foreach (var user in Model)
+            {
+                 <option>@user.Name</option>
+            }
+     
+     </select>

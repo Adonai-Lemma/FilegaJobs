@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+        <h1>Filega</h1>
+        <p class="lead">Filega is a web application for connecting workers and employers from accross Ethiopia.</p>
+        <p><a asp-controller="Home" asp-action="Profile" class="btn btn-primary btn-lg">Register &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Looking for workers</h2>
+            <p>
+                Filega lets you create Job descriptions and post them on the list allowing you to cast a wide net for prospective employees
+            </p>
+            <p>
+                <a class="btn btn-default" href="/Home/Listing">Job Listings &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>Looking for work</h2>
+            <p>
+                Containing a massive database of companies seeking professional workers, Filega will no doubt find a match for you.
+            </p>
+            <p>
+                <a class="btn btn-default" >Search Jobs &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>Create a profile</h2>
+            <p>
+                You can easily create a profile to upload and update credentials as either an employee or employer.&nbsp; </p>
+            <p>
+                <a class="btn btn-default" asp-controller="Home" asp-action="Profile">Upload and Update &raquo;</a>
+            </p>
+        </div>
+    </div>
